@@ -1,0 +1,76 @@
+require:
+  - rubocop-performance
+  - rubocop-rspec
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+  AutoCorrect: true
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/CaseIndentation:
+  EnforcedStyle: end
+
+Layout/IndentArray:
+  EnforcedStyle: consistent
+
+Layout/IndentHash:
+  EnforcedStyle: consistent
+
+Layout/FirstParameterIndentation:
+  EnforcedStyle: consistent
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/MultilineMethodArgumentLineBreaks:
+  Enabled: true
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+Layout/SpaceInsideBlockBraces:
+  SpaceBeforeBlockParameters: false
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/StringLiteralsInInterpolation:
+  Enabled: false
+
+Style/FormatString:
+  EnforcedStyle: percent
+
+Style/NumericPredicate:
+  AutoCorrect: true
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Lint/AssignmentInCondition:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude: ['**/*.gemspec', 'spec/**/*']
+
+Metrics/ModuleLength:
+  Exclude: ['**/*.gemspec', 'spec/**/*']
+
+Metrics/LineLength:
+  Max: 80
+
+Naming/UncommunicativeMethodParamName:
+  AllowedNames: ['io', 'id', 'to', 'by', 'on', 'in', 'at', 'ip', 'db', 'iv']
+
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
