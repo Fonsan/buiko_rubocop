@@ -38,6 +38,9 @@ PLATFORMS
 DEPENDENCIES
   buiko_rubocop!
   rake
+  rubocop
+  rubocop-performance
+  rubocop-rspec
 
 BUNDLED WITH
    1.17.2
